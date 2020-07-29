@@ -3,8 +3,8 @@
 ## Instalation
 To Use Api Install Package First
 ```bash
-npm install @kagchi/kag-api
-yarn add @kagchi/kag-api
+npm install instagram-api.js
+yarn add instagram-api.js
 ```
 A instagram api wrapper
 ## Usage
