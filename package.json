@@ -1,0 +1,19 @@
+{
+  "name": "instagram-api.js",
+  "version": "1.1.2-dev",
+  "description": "a simple instagram api wrapper",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": "https://github.com/KagChi/instagra-api.js.git",
+  "keywords": [
+    "wikihow",
+    "coinflip"
+  ],
+  "author": "KagChi#2628",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
