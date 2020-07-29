@@ -7,7 +7,7 @@ module.exports = class KagApi {
   }
   async instagram(user) {
   if (!user) throw Error('Please enter instagram username');
-    const data = await request.get("https://instagram.hanifdwyputra.xyz/?username=" + user).then(res => res.data.graphql);
+    const data = await request.get("https://instagram.hanifdwyputra.xyz/?username=" + user).then(res => res.data.graphql.data);
     return data;
   };
  };
