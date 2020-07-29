@@ -1,6 +1,6 @@
 const request = require("axios");
 const { author, version } = require("./package.json");
-module.exports = class KagApi {
+module.exports = class InstaClient {
   constructor() {
     this.version = version;
     this.author = author;
