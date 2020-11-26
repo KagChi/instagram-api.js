@@ -9,8 +9,7 @@ yarn add instagram-api.js
 A instagram api wrapper
 ## Usage
 ```js
-const InstaClient = require("instagram-api.js")
-const api = new InstaClient()
+const api = require("instagram-api.js")
 (async() => {
 const userinfo = await api.user("mrbeast")
 console.log(userinfo)
