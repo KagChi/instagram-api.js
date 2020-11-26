@@ -7,4 +7,4 @@ const { author, version } = require("./package.json");
   };
  };
 
-module.exports = instagram;
+module.exports = user;
