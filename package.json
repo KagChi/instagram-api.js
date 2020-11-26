@@ -1,6 +1,6 @@
 {
   "name": "instagram-api.js",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "a simple instagram api wrapper",
   "main": "index.js",
   "scripts": {
