@@ -1,6 +1,5 @@
 const fetch = require("node-fetch");
 /**
- * 
  * @param {string} user 
  * @param {string} sessionID 
  */
