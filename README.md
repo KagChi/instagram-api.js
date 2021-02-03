@@ -11,6 +11,8 @@ A instagram api wrapper
 ```js
 const api = require("instagram-api.js")
 (async() => {
-const userinfo = await api.user("mrbeast")
-console.log(userinfo)
+    const sessionID = "your instagram sessionid" //optional but optimal
+    const userinfo = await api.user("mrbeast", sessionID)
+    console.log(userinfo)
 }()
+```
