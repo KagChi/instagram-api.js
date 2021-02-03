@@ -1,7 +1,6 @@
 const fetch = require("node-fetch");
 async function user(user, sessionID) {
   if (!user) throw Error('Please enter instagram username');
-  try {
     var data;
     try {
       data = await fetch("https://api.hansputera.me/instagram/" + user).then(res => res.json());
@@ -11,4 +10,3 @@ async function user(user, sessionID) {
   return data.graphql.user
 };
 module.exports = { user }
-
