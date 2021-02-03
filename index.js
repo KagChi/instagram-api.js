@@ -1,4 +1,10 @@
 const fetch = require("node-fetch");
+/**
+ * @example user("mrbeast", "yoUrnIceSessionID")
+ * @example user("mrbeast")
+ * @param {string} user 
+ * @param {string} sessionID 
+ */
 async function user(user, sessionID) {
   if (!user) throw Error('Please enter instagram username');
   try {
