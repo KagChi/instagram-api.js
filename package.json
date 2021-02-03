@@ -1,12 +1,12 @@
 {
   "name": "instagram-api.js",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "a simple instagram api wrapper",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "repository": "https://github.com/KagChi/instagra-api.js.git",
+  "repository": "https://github.com/KagChi/instagram-api.js.git",
   "keywords": [
     "instagram-api",
     "instagram-data",
