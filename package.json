@@ -12,7 +12,7 @@
     "instagram-data",
     "instagram-api.js"
   ],
-  "author": "KagChi#2628",
+  "author": ["KagChi#2628", "FlockNet", "BlazeDexX"],
   "license": "MIT",
   "dependencies": {
     "node-fetch": "^2.6.1"
