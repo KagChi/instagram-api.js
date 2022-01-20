@@ -1,17 +1,21 @@
 {
   "name": "instagram-api.js",
-  "version": "0.0.9",
-  "description": "a simple instagram api wrapper",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "A easy to use instagram public api wrapper",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "repository": "https://github.com/KagChi/instagram-api.js.git",
   "keywords": [
     "instagram-api",
     "instagram-data",
     "instagram-api.js"
   ],
-  "author": ["KagChi#2628", "FlockNet", "BlazeDexX"],
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "KagChi",
   "license": "MIT",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "@sapphire/fetch": "^2.0.4"
   }
 }
