@@ -1,6 +1,6 @@
 {
   "name": "instagram-api.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A easy to use instagram public api wrapper",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
