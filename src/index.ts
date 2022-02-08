@@ -22,6 +22,45 @@ export async function user(userName: string, sessionId?: string): Promise<Instag
     }
 }
 
+/**
+ * @example 
+ * const { post } = require("instagram-api.js");
+ * (() => {
+ *    const postInfo = await post("CZcrDstPHA4");
+ *    console.log(postInfo);
+ * })();
+ * Note: This search instagram post public api info
+ */
+export async function post(postId: string) {
+    if (!postId) return null;
+    try { 
+        const apiResult = await fetch<InstagramPostApiResult>(`https://instagram.com/p/${postId}/?__a=1`, FetchResultTypes.JSON);
+        if (!apiResult.graphql) return null;
+        return apiResult.graphql;
+    } catch(e) {
+        return null;
+    }
+}
+
+export interface InstagramPostApiResult {
+    graphql: {
+        shortcode_media: {
+            id: string;
+        },
+        display_url: string;
+        edge_media_to_caption: {
+            edges: {
+                node: {
+                    text: string;
+                }
+            }[]
+        }
+        edge_media_preview_like: {
+            count: number;
+        }
+    }
+}
+
 export interface InstagramApiResult {
     seo_category_infos: Array<string[]>;
     logging_page_id: string;
